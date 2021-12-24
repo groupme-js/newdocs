@@ -35,10 +35,9 @@ export default function Navbar() {
                         <Link className="navbar-item" href="/">
                             Home
                         </Link>
-
-                        <a className="navbar-item" href="#">
-                            Ignite (Coming Soon)
-                        </a>
+                        <Link className="navbar-item" href="/about">
+                            About
+                        </Link>
                     </div>
                     <div className="navbar-end">
                         <div className="navbar-item">
