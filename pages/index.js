@@ -10,7 +10,7 @@ export default function Home() {
             <div className="columns is-mobile is-centered">
                 <div className="column is-half">
                     <p className="text-center title">node-groupme</p>
-                    <p className="text-center subtitle">The only GroupMe API library for NodeJS that isn't a million years old.</p>
+                    <p className="text-center subtitle">The only GroupMe API library for NodeJS that isn&apos;t a million years old.</p>
                 </div>
             </div>
             <div className="columns is-mobile is-centered">
