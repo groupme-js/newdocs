@@ -20,8 +20,10 @@ export default function Navbar() {
         <>
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                    <Link href="/" className="navbar-item nounderline">
-                        <span>node-groupme</span>
+                    <Link href="/">
+                        <a className="navbar-item nounderline">
+                            <span>node-groupme</span>
+                        </a>
                     </Link>
 
                     <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
@@ -32,18 +34,18 @@ export default function Navbar() {
                 </div>
                 <div className="navbar-menu" id="navMenu">
                     <div className="navbar-start">
-                        <Link className="navbar-item" href="/">
-                            Home
+                        <Link href="/">
+                            <a className="navbar-item">Home</a>
                         </Link>
-                        <Link className="navbar-item" href="/about">
-                            About
+                        <Link href="/about">
+                            <a className="navbar-item">About</a>
                         </Link>
                     </div>
                     <div className="navbar-end">
                         <div className="navbar-item">
                             <a className="button is-white" href="https://github.com/groupme-js">
                                 <i className="fa-navbar fa-brands fa-github"></i>
-                                GitHub
+                                <span className="padleft">GitHub</span>
                             </a>
                         </div>
                     </div>
