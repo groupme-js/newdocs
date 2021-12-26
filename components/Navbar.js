@@ -43,7 +43,7 @@ export default function Navbar() {
                     </div>
                     <div className="navbar-end">
                         <div className="navbar-item">
-                            <a className="button is-white" href="https://github.com/groupme-js">
+                            <a className="button is-light" href="https://github.com/groupme-js">
                                 <i className="fa-navbar fa-brands fa-github"></i>
                                 <span className="padleft">GitHub</span>
                             </a>
