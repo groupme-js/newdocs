@@ -1,6 +1,4 @@
 import Head from "next/head"
-import Image from "next/image"
-import logo from "../logo.png"
 import vars from "../vars"
 
 export default function Home() {
@@ -21,7 +19,7 @@ export default function Home() {
                         </div>
                         <div className="tile is-child">
                             <section className="section">
-                                <Image src={logo} alt="node-groupme logo" width={"200px"} height={"200px"} />
+                                <img src="https://i.imgur.com/uYsg7IC.png" alt="node-groupme logo" width={"200px"} height={"200px"} />
                             </section>
                         </div>
                     </div>
