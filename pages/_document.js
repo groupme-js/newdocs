@@ -17,7 +17,7 @@ class MyDocument extends Document {
                     <meta property="og:title" content="node-groupme" />
                     <meta property="og:theme-color" content="#4EACEA" />
                     <meta property="og:url" content="https://groupme.js.org" />
-                    <meta property="od:description" content="The only GroupMe API library for NodeJS that isn't a million years old." />
+                    <meta property="og:description" content="The only GroupMe API library for NodeJS that isn't a million years old." />
                     <script async src="https://kit.fontawesome.com/114d30bb2c.js" crossOrigin="anonymous"></script>
                     <meta name="title" content="node-groupme" />
                     <meta name="description" content="The only GroupMe API library for NodeJS that isn't a million years old." />
