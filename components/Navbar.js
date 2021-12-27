@@ -40,6 +40,9 @@ export default function Navbar() {
                         <Link href="/about">
                             <a className="navbar-item">About</a>
                         </Link>
+                        <Link href="/docs">
+                            <a className="navbar-item">Documentation</a>
+                        </Link>
                     </div>
                     <div className="navbar-end">
                         <div className="navbar-item">
