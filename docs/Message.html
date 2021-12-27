@@ -1,0 +1,579 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="theme-color" content="#4EACEA"/><meta property="description" content="The only GroupMe API library for NodeJS that isn&#x27;t a million years old."/><meta property="og:title" content="node-groupme"/><meta property="og:theme-color" content="#4EACEA"/><meta property="og:url" content="https://groupme.js.org"/><meta property="og:description" content="The only GroupMe API library for NodeJS that isn&#x27;t a million years old."/><script async="" src="https://kit.fontawesome.com/114d30bb2c.js" crossorigin="anonymous"></script><meta name="title" content="node-groupme"/><meta name="description" content="The only GroupMe API library for NodeJS that isn&#x27;t a million years old."/><meta name="keywords" content="groupme,api,node-groupme,groupme.js"/><meta name="robots" content="index, follow"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="language" content="English"/><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Documentation | node-groupme</title><meta name="next-head-count" content="3"/><link rel="preload" href="/_next/static/css/bc458c953e1cc4ae.css" as="style"/><link rel="stylesheet" href="/_next/static/css/bc458c953e1cc4ae.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/_next/static/chunks/webpack-514908bffb652963.js" defer=""></script><script src="/_next/static/chunks/framework-91d7f78b5b4003c8.js" defer=""></script><script src="/_next/static/chunks/main-deb592798b94b511.js" defer=""></script><script src="/_next/static/chunks/pages/_app-23d58dc54c962768.js" defer=""></script><script src="/_next/static/chunks/530-f77c8b3a027a978b.js" defer=""></script><script src="/_next/static/chunks/pages/docs/%5Bid%5D-dd81dfd72f7f831f.js" defer=""></script><script src="/_next/static/HMqt0vz3xkV3w_kgvl1ss/_buildManifest.js" defer=""></script><script src="/_next/static/HMqt0vz3xkV3w_kgvl1ss/_ssgManifest.js" defer=""></script><script src="/_next/static/HMqt0vz3xkV3w_kgvl1ss/_middlewareManifest.js" defer=""></script></head><body class=""><div id="__next" data-reactroot=""><nav class="navbar" role="navigation" aria-label="main navigation"><div class="navbar-brand"><a class="navbar-item nounderline" href="/"><span>node-groupme</span></a><a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div><div class="navbar-menu" id="navMenu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/docs">Documentation</a></div><div class="navbar-end"><div class="navbar-item"><a class="button is-light" href="https://github.com/groupme-js"><i class="fa-navbar fa-brands fa-github"></i><span class="padleft">GitHub</span></a></div></div></div></nav><div><div class="container"><h1 class="title py-6">Documentation</h1><div class="tile is-ancestor"><div class="tile is-parent is-3"><div class="tile is-child"><aside class="menu"><p class="menu-label">Documentation</p><ul class="menu-list"><li><a><a href="/docs/ChannelType">ChannelType</a></a></li><li><a><a href="/docs/Channel">Channel</a></a></li><li><a><a href="/docs/Chat">Chat</a></a></li><li><a><a href="/docs/Client">Client</a></a></li><li><a><a href="/docs/Collection">Collection</a></a></li><li><a><a href="/docs/FormerGroup">FormerGroup</a></a></li><li><a><a href="/docs/Group">Group</a></a></li><li><a><a href="/docs/Member">Member</a></a></li><li><a><a href="/docs/Message">Message</a></a></li><li><a><a href="/docs/Poll">Poll</a></a></li><li><a><a href="/docs/User">User</a></a></li><li><a><a href="/docs/SendableChannelInterface">SendableChannelInterface</a></a></li></ul></aside></div></div><div class="tile is-parent"><div class="tile is-child">{
+  &quot;id&quot;: 1,
+  &quot;name&quot;: &quot;Message&quot;,
+  &quot;kind&quot;: 128,
+  &quot;kindString&quot;: &quot;Class&quot;,
+  &quot;flags&quot;: {
+    &quot;isAbstract&quot;: true
+  },
+  &quot;children&quot;: [
+    {
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;constructor&quot;,
+      &quot;kind&quot;: 512,
+      &quot;kindString&quot;: &quot;Constructor&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 25,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;signatures&quot;: [
+        {
+          &quot;id&quot;: 3,
+          &quot;name&quot;: &quot;new Message&quot;,
+          &quot;kind&quot;: 16384,
+          &quot;kindString&quot;: &quot;Constructor signature&quot;,
+          &quot;flags&quot;: {},
+          &quot;parameters&quot;: [
+            {
+              &quot;id&quot;: 4,
+              &quot;name&quot;: &quot;client&quot;,
+              &quot;kind&quot;: 32768,
+              &quot;kindString&quot;: &quot;Parameter&quot;,
+              &quot;flags&quot;: {},
+              &quot;type&quot;: {
+                &quot;type&quot;: &quot;reference&quot;,
+                &quot;id&quot;: 29,
+                &quot;name&quot;: &quot;default&quot;
+              }
+            },
+            {
+              &quot;id&quot;: 5,
+              &quot;name&quot;: &quot;channel&quot;,
+              &quot;kind&quot;: 32768,
+              &quot;kindString&quot;: &quot;Parameter&quot;,
+              &quot;flags&quot;: {},
+              &quot;type&quot;: {
+                &quot;type&quot;: &quot;reference&quot;,
+                &quot;id&quot;: 133,
+                &quot;name&quot;: &quot;default&quot;
+              }
+            },
+            {
+              &quot;id&quot;: 6,
+              &quot;name&quot;: &quot;data&quot;,
+              &quot;kind&quot;: 32768,
+              &quot;kindString&quot;: &quot;Parameter&quot;,
+              &quot;flags&quot;: {},
+              &quot;type&quot;: {
+                &quot;type&quot;: &quot;union&quot;,
+                &quot;types&quot;: [
+                  {
+                    &quot;type&quot;: &quot;reference&quot;,
+                    &quot;name&quot;: &quot;APIGroupMessage&quot;
+                  },
+                  {
+                    &quot;type&quot;: &quot;reference&quot;,
+                    &quot;name&quot;: &quot;APIChatMessage&quot;
+                  }
+                ]
+              }
+            }
+          ],
+          &quot;type&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;default&quot;
+          }
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 15,
+      &quot;name&quot;: &quot;attachments&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;kindString&quot;: &quot;Property&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 24,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;elementType&quot;: {
+          &quot;type&quot;: &quot;reference&quot;,
+          &quot;name&quot;: &quot;default&quot;
+        }
+      }
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;name&quot;: &quot;channel&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;kindString&quot;: &quot;Property&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 18,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;type&quot;: &quot;reference&quot;,
+        &quot;id&quot;: 133,
+        &quot;name&quot;: &quot;default&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 11,
+      &quot;name&quot;: &quot;createdAt&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;kindString&quot;: &quot;Property&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 20,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;type&quot;: &quot;intrinsic&quot;,
+        &quot;name&quot;: &quot;number&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 7,
+      &quot;name&quot;: &quot;id&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;kindString&quot;: &quot;Property&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 16,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;type&quot;: &quot;intrinsic&quot;,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 14,
+      &quot;name&quot;: &quot;likes&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;kindString&quot;: &quot;Property&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 23,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;elementType&quot;: {
+          &quot;type&quot;: &quot;union&quot;,
+          &quot;types&quot;: [
+            {
+              &quot;type&quot;: &quot;intrinsic&quot;,
+              &quot;name&quot;: &quot;string&quot;
+            },
+            {
+              &quot;type&quot;: &quot;reference&quot;,
+              &quot;id&quot;: 336,
+              &quot;name&quot;: &quot;default&quot;
+            }
+          ]
+        }
+      }
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;name&quot;: &quot;sourceGuid&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;kindString&quot;: &quot;Property&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 21,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;type&quot;: &quot;intrinsic&quot;,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 13,
+      &quot;name&quot;: &quot;system&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;kindString&quot;: &quot;Property&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 22,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;type&quot;: &quot;intrinsic&quot;,
+        &quot;name&quot;: &quot;boolean&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;name&quot;: &quot;text&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;kindString&quot;: &quot;Property&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 19,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;type&quot;: &quot;union&quot;,
+        &quot;types&quot;: [
+          {
+            &quot;type&quot;: &quot;literal&quot;,
+            &quot;value&quot;: null
+          },
+          {
+            &quot;type&quot;: &quot;intrinsic&quot;,
+            &quot;name&quot;: &quot;string&quot;
+          }
+        ]
+      }
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;name&quot;: &quot;user&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;kindString&quot;: &quot;Property&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 17,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;type&quot;: &quot;reference&quot;,
+        &quot;id&quot;: 336,
+        &quot;name&quot;: &quot;default&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 27,
+      &quot;name&quot;: &quot;canDelete&quot;,
+      &quot;kind&quot;: 262144,
+      &quot;kindString&quot;: &quot;Accessor&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 57,
+          &quot;character&quot;: 8
+        }
+      ],
+      &quot;getSignature&quot;: [
+        {
+          &quot;id&quot;: 28,
+          &quot;name&quot;: &quot;canDelete&quot;,
+          &quot;kind&quot;: 524288,
+          &quot;kindString&quot;: &quot;Get signature&quot;,
+          &quot;flags&quot;: {},
+          &quot;type&quot;: {
+            &quot;type&quot;: &quot;intrinsic&quot;,
+            &quot;name&quot;: &quot;boolean&quot;
+          }
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 25,
+      &quot;name&quot;: &quot;delete&quot;,
+      &quot;kind&quot;: 2048,
+      &quot;kindString&quot;: &quot;Method&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 54,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;signatures&quot;: [
+        {
+          &quot;id&quot;: 26,
+          &quot;name&quot;: &quot;delete&quot;,
+          &quot;kind&quot;: 4096,
+          &quot;kindString&quot;: &quot;Call signature&quot;,
+          &quot;flags&quot;: {},
+          &quot;type&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;typeArguments&quot;: [
+              {
+                &quot;type&quot;: &quot;reference&quot;,
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;default&quot;
+              }
+            ],
+            &quot;name&quot;: &quot;Promise&quot;
+          },
+          &quot;implementationOf&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;name&quot;: &quot;MessageInterface.delete&quot;
+          }
+        }
+      ],
+      &quot;implementationOf&quot;: {
+        &quot;type&quot;: &quot;reference&quot;,
+        &quot;name&quot;: &quot;MessageInterface.delete&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 16,
+      &quot;name&quot;: &quot;fetch&quot;,
+      &quot;kind&quot;: 2048,
+      &quot;kindString&quot;: &quot;Method&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 42,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;signatures&quot;: [
+        {
+          &quot;id&quot;: 17,
+          &quot;name&quot;: &quot;fetch&quot;,
+          &quot;kind&quot;: 4096,
+          &quot;kindString&quot;: &quot;Call signature&quot;,
+          &quot;flags&quot;: {},
+          &quot;type&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;typeArguments&quot;: [
+              {
+                &quot;type&quot;: &quot;reference&quot;,
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;default&quot;
+              }
+            ],
+            &quot;name&quot;: &quot;Promise&quot;
+          },
+          &quot;implementationOf&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;name&quot;: &quot;MessageInterface.fetch&quot;
+          }
+        }
+      ],
+      &quot;implementationOf&quot;: {
+        &quot;type&quot;: &quot;reference&quot;,
+        &quot;name&quot;: &quot;MessageInterface.fetch&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 21,
+      &quot;name&quot;: &quot;like&quot;,
+      &quot;kind&quot;: 2048,
+      &quot;kindString&quot;: &quot;Method&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 48,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;signatures&quot;: [
+        {
+          &quot;id&quot;: 22,
+          &quot;name&quot;: &quot;like&quot;,
+          &quot;kind&quot;: 4096,
+          &quot;kindString&quot;: &quot;Call signature&quot;,
+          &quot;flags&quot;: {},
+          &quot;type&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;typeArguments&quot;: [
+              {
+                &quot;type&quot;: &quot;reference&quot;,
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;default&quot;
+              }
+            ],
+            &quot;name&quot;: &quot;Promise&quot;
+          },
+          &quot;implementationOf&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;name&quot;: &quot;MessageInterface.like&quot;
+          }
+        }
+      ],
+      &quot;implementationOf&quot;: {
+        &quot;type&quot;: &quot;reference&quot;,
+        &quot;name&quot;: &quot;MessageInterface.like&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 18,
+      &quot;name&quot;: &quot;reply&quot;,
+      &quot;kind&quot;: 2048,
+      &quot;kindString&quot;: &quot;Method&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 45,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;signatures&quot;: [
+        {
+          &quot;id&quot;: 19,
+          &quot;name&quot;: &quot;reply&quot;,
+          &quot;kind&quot;: 4096,
+          &quot;kindString&quot;: &quot;Call signature&quot;,
+          &quot;flags&quot;: {},
+          &quot;parameters&quot;: [
+            {
+              &quot;id&quot;: 20,
+              &quot;name&quot;: &quot;message&quot;,
+              &quot;kind&quot;: 32768,
+              &quot;kindString&quot;: &quot;Parameter&quot;,
+              &quot;flags&quot;: {},
+              &quot;type&quot;: {
+                &quot;type&quot;: &quot;intrinsic&quot;,
+                &quot;name&quot;: &quot;string&quot;
+              }
+            }
+          ],
+          &quot;type&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;typeArguments&quot;: [
+              {
+                &quot;type&quot;: &quot;reference&quot;,
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;default&quot;
+              }
+            ],
+            &quot;name&quot;: &quot;Promise&quot;
+          },
+          &quot;implementationOf&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;name&quot;: &quot;MessageInterface.reply&quot;
+          }
+        }
+      ],
+      &quot;implementationOf&quot;: {
+        &quot;type&quot;: &quot;reference&quot;,
+        &quot;name&quot;: &quot;MessageInterface.reply&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 23,
+      &quot;name&quot;: &quot;unlike&quot;,
+      &quot;kind&quot;: 2048,
+      &quot;kindString&quot;: &quot;Method&quot;,
+      &quot;flags&quot;: {},
+      &quot;sources&quot;: [
+        {
+          &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+          &quot;line&quot;: 51,
+          &quot;character&quot;: 4
+        }
+      ],
+      &quot;signatures&quot;: [
+        {
+          &quot;id&quot;: 24,
+          &quot;name&quot;: &quot;unlike&quot;,
+          &quot;kind&quot;: 4096,
+          &quot;kindString&quot;: &quot;Call signature&quot;,
+          &quot;flags&quot;: {},
+          &quot;type&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;typeArguments&quot;: [
+              {
+                &quot;type&quot;: &quot;reference&quot;,
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;default&quot;
+              }
+            ],
+            &quot;name&quot;: &quot;Promise&quot;
+          },
+          &quot;implementationOf&quot;: {
+            &quot;type&quot;: &quot;reference&quot;,
+            &quot;name&quot;: &quot;MessageInterface.unlike&quot;
+          }
+        }
+      ],
+      &quot;implementationOf&quot;: {
+        &quot;type&quot;: &quot;reference&quot;,
+        &quot;name&quot;: &quot;MessageInterface.unlike&quot;
+      }
+    }
+  ],
+  &quot;groups&quot;: [
+    {
+      &quot;title&quot;: &quot;Constructors&quot;,
+      &quot;kind&quot;: 512,
+      &quot;children&quot;: [
+        2
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Properties&quot;,
+      &quot;kind&quot;: 1024,
+      &quot;children&quot;: [
+        15,
+        9,
+        11,
+        7,
+        14,
+        12,
+        13,
+        10,
+        8
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Accessors&quot;,
+      &quot;kind&quot;: 262144,
+      &quot;children&quot;: [
+        27
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Methods&quot;,
+      &quot;kind&quot;: 2048,
+      &quot;children&quot;: [
+        25,
+        16,
+        21,
+        18,
+        23
+      ]
+    }
+  ],
+  &quot;sources&quot;: [
+    {
+      &quot;fileName&quot;: &quot;src/structures/Message.ts&quot;,
+      &quot;line&quot;: 15,
+      &quot;character&quot;: 30
+    }
+  ],
+  &quot;implementedTypes&quot;: [
+    {
+      &quot;type&quot;: &quot;reference&quot;,
+      &quot;name&quot;: &quot;MessageInterface&quot;
+    }
+  ]
+}</div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"childData":{"id":1,"name":"Message","kind":128,"kindString":"Class","flags":{"isAbstract":true},"children":[{"id":2,"name":"constructor","kind":512,"kindString":"Constructor","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":25,"character":4}],"signatures":[{"id":3,"name":"new Message","kind":16384,"kindString":"Constructor signature","flags":{},"parameters":[{"id":4,"name":"client","kind":32768,"kindString":"Parameter","flags":{},"type":{"type":"reference","id":29,"name":"default"}},{"id":5,"name":"channel","kind":32768,"kindString":"Parameter","flags":{},"type":{"type":"reference","id":133,"name":"default"}},{"id":6,"name":"data","kind":32768,"kindString":"Parameter","flags":{},"type":{"type":"union","types":[{"type":"reference","name":"APIGroupMessage"},{"type":"reference","name":"APIChatMessage"}]}}],"type":{"type":"reference","id":1,"name":"default"}}]},{"id":15,"name":"attachments","kind":1024,"kindString":"Property","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":24,"character":4}],"type":{"type":"array","elementType":{"type":"reference","name":"default"}}},{"id":9,"name":"channel","kind":1024,"kindString":"Property","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":18,"character":4}],"type":{"type":"reference","id":133,"name":"default"}},{"id":11,"name":"createdAt","kind":1024,"kindString":"Property","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":20,"character":4}],"type":{"type":"intrinsic","name":"number"}},{"id":7,"name":"id","kind":1024,"kindString":"Property","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":16,"character":4}],"type":{"type":"intrinsic","name":"string"}},{"id":14,"name":"likes","kind":1024,"kindString":"Property","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":23,"character":4}],"type":{"type":"array","elementType":{"type":"union","types":[{"type":"intrinsic","name":"string"},{"type":"reference","id":336,"name":"default"}]}}},{"id":12,"name":"sourceGuid","kind":1024,"kindString":"Property","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":21,"character":4}],"type":{"type":"intrinsic","name":"string"}},{"id":13,"name":"system","kind":1024,"kindString":"Property","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":22,"character":4}],"type":{"type":"intrinsic","name":"boolean"}},{"id":10,"name":"text","kind":1024,"kindString":"Property","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":19,"character":4}],"type":{"type":"union","types":[{"type":"literal","value":null},{"type":"intrinsic","name":"string"}]}},{"id":8,"name":"user","kind":1024,"kindString":"Property","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":17,"character":4}],"type":{"type":"reference","id":336,"name":"default"}},{"id":27,"name":"canDelete","kind":262144,"kindString":"Accessor","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":57,"character":8}],"getSignature":[{"id":28,"name":"canDelete","kind":524288,"kindString":"Get signature","flags":{},"type":{"type":"intrinsic","name":"boolean"}}]},{"id":25,"name":"delete","kind":2048,"kindString":"Method","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":54,"character":4}],"signatures":[{"id":26,"name":"delete","kind":4096,"kindString":"Call signature","flags":{},"type":{"type":"reference","typeArguments":[{"type":"reference","id":1,"name":"default"}],"name":"Promise"},"implementationOf":{"type":"reference","name":"MessageInterface.delete"}}],"implementationOf":{"type":"reference","name":"MessageInterface.delete"}},{"id":16,"name":"fetch","kind":2048,"kindString":"Method","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":42,"character":4}],"signatures":[{"id":17,"name":"fetch","kind":4096,"kindString":"Call signature","flags":{},"type":{"type":"reference","typeArguments":[{"type":"reference","id":1,"name":"default"}],"name":"Promise"},"implementationOf":{"type":"reference","name":"MessageInterface.fetch"}}],"implementationOf":{"type":"reference","name":"MessageInterface.fetch"}},{"id":21,"name":"like","kind":2048,"kindString":"Method","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":48,"character":4}],"signatures":[{"id":22,"name":"like","kind":4096,"kindString":"Call signature","flags":{},"type":{"type":"reference","typeArguments":[{"type":"reference","id":1,"name":"default"}],"name":"Promise"},"implementationOf":{"type":"reference","name":"MessageInterface.like"}}],"implementationOf":{"type":"reference","name":"MessageInterface.like"}},{"id":18,"name":"reply","kind":2048,"kindString":"Method","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":45,"character":4}],"signatures":[{"id":19,"name":"reply","kind":4096,"kindString":"Call signature","flags":{},"parameters":[{"id":20,"name":"message","kind":32768,"kindString":"Parameter","flags":{},"type":{"type":"intrinsic","name":"string"}}],"type":{"type":"reference","typeArguments":[{"type":"reference","id":1,"name":"default"}],"name":"Promise"},"implementationOf":{"type":"reference","name":"MessageInterface.reply"}}],"implementationOf":{"type":"reference","name":"MessageInterface.reply"}},{"id":23,"name":"unlike","kind":2048,"kindString":"Method","flags":{},"sources":[{"fileName":"src/structures/Message.ts","line":51,"character":4}],"signatures":[{"id":24,"name":"unlike","kind":4096,"kindString":"Call signature","flags":{},"type":{"type":"reference","typeArguments":[{"type":"reference","id":1,"name":"default"}],"name":"Promise"},"implementationOf":{"type":"reference","name":"MessageInterface.unlike"}}],"implementationOf":{"type":"reference","name":"MessageInterface.unlike"}}],"groups":[{"title":"Constructors","kind":512,"children":[2]},{"title":"Properties","kind":1024,"children":[15,9,11,7,14,12,13,10,8]},{"title":"Accessors","kind":262144,"children":[27]},{"title":"Methods","kind":2048,"children":[25,16,21,18,23]}],"sources":[{"fileName":"src/structures/Message.ts","line":15,"character":30}],"implementedTypes":[{"type":"reference","name":"MessageInterface"}]}},"__N_SSG":true},"page":"/docs/[id]","query":{"id":"Message"},"buildId":"HMqt0vz3xkV3w_kgvl1ss","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
