@@ -36,7 +36,10 @@ export default function Docs({ childData }) {
                         </div>
                     </div>
                     <div className="tile is-parent">
-                        <div className="tile is-child">{JSON.stringify(childData, null, 2)}</div>
+                        <div className="tile is-child">
+                            <p class="title py-3">Coming soon, here's a JSON dump of the data for now</p>
+                            {JSON.stringify(childData, null, 2)}
+                        </div>
                     </div>
                 </div>
             </div>
