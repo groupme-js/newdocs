@@ -40,7 +40,7 @@ export default function Docs({ childData, active }) {
                             <p className="title py-3">{active}</p>
                             {childData.children.map((x) => {
                                 return (
-                                    <div className="tile is-parent">
+                                    <div className="tile is-parent" key={active}>
                                         <a id={active}>
                                             <div className="tile is-child box">{JSON.stringify(x)}</div>
                                         </a>

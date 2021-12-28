@@ -16,7 +16,7 @@ export default function About() {
                 </div>
                 <div className="section box">
                     <p>This is a third section....</p>
-                    <p>Ok yeah I have no idea what to put here, idk anything about node-groupme's history or stuff tbf</p>
+                    <p>Ok yeah I have no idea what to put here, idk anything about node-groupme&apos;s history or stuff tbf</p>
                 </div>
             </div>
         </div>
