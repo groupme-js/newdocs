@@ -1,6 +1,5 @@
 import Head from "next/head"
 import DocMenu from "../../components/DocMenu"
-import { useRouter } from "next/router"
 
 import { getTopLevelChilds, getChildData } from "../../lib/docs"
 
@@ -17,11 +16,12 @@ export async function getStaticProps({ params }) {
     return {
         props: {
             childData,
+            active: params.id,
         },
     }
 }
 
-export default function Docs({ childData }) {
+export default function Docs({ childData, active }) {
     return (
         <div>
             <Head>
@@ -32,13 +32,21 @@ export default function Docs({ childData }) {
                 <div className="tile is-ancestor">
                     <div className="tile is-parent is-3">
                         <div className="tile is-child">
-                            <DocMenu />
+                            <DocMenu active={active} />
                         </div>
                     </div>
                     <div className="tile is-parent">
                         <div className="tile is-child">
-                            <p className="title py-3">Coming soon, here is a JSON dump of the data for now</p>
-                            {JSON.stringify(childData, null, 2)}
+                            <p className="title py-3">{active}</p>
+                            {childData.children.map((x) => {
+                                return (
+                                    <div className="tile is-parent">
+                                        <a id={active}>
+                                            <div className="tile is-child box">{JSON.stringify(x)}</div>
+                                        </a>
+                                    </div>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>
