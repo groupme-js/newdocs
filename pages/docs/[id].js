@@ -26,8 +26,9 @@ export default function Docs({ childData, active }) {
         <div>
             <Head>
                 <title>Documentation | node-groupme</title>
-                <meta property="og:title" content="Documentation | node-groupme" />
-                <meta name="title" content="Documentation | node-groupme" />
+                <meta property="og:title" content={active ?? "" + "Documentation | node-groupme"} />
+                <meta name="title" content={active ?? "" + "Documentation | node-groupme"} />
+                active ? <meta name="description" content={"See the documentation for " + active + " in node-groupme, the only GroupMe API library for NodeJS that isn't a million years old."} /> : null active ? <meta name="og:description" content={"See the documentation for " + active + " in node-groupme, the only GroupMe API library for NodeJS that isn't a million years old."} /> : null
             </Head>
             <div className="container">
                 <h1 className="title py-6">Documentation</h1>
@@ -43,7 +44,7 @@ export default function Docs({ childData, active }) {
                             {["Constructor", "Property", "Method"].map((kind) => {
                                 return (
                                     <>
-                                    <hr />
+                                        <hr />
                                         <p className="subtitle py-3">{kind}</p>
 
                                         {childData.children
@@ -76,7 +77,6 @@ export default function Docs({ childData, active }) {
                                                     </div>
                                                 )
                                             })}
-                                        
                                     </>
                                 )
                             })}
