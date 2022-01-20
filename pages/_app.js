@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Navbar />
-            <div class="notification is-danger">This site is still under development. Please report any bugs to TheShadow#8124 in the Discord server.</div>
+            <div className="notification is-danger">This site is still under development. Please report any bugs to TheShadow#8124 in the Discord server.</div>
 
             <Component {...pageProps} />
         </>

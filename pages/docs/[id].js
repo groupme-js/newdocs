@@ -43,14 +43,14 @@ export default function Docs({ childData, active }) {
                                     <div className="tile is-parent" key={active}>
                                         <a id={active}>
                                             <div className="tile is-child box is-fullwidth">
-                                                <p class="title is-4">{x.name}</p>
-                                                <p class="">
+                                                <p className="title is-4">{x.name}</p>
+                                                <p className="">
                                                     Data to implement: {Object.keys(x).join(", ")}
                                                 </p>
                                                 {x.sources ? <p className="title is-5">Source</p> : null}
                                                 {x?.sources?.map((source) => {
                                                     return (
-                                                        <p class="subtitle is-6">
+                                                        <p key={source.fileName + "#L" + source.line} className="subtitle is-6">
                                                             <a href={"https://github.com/groupme-js/node-groupme/tree/main/" + source.fileName + "#L" + source.line}>
                                                                 {source.fileName} - Line {source.line}
                                                             </a>
