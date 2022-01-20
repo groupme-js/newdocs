@@ -52,7 +52,7 @@ export default function Docs({ childData, active }) {
                                             .map((x) => {
                                                 return (
                                                     <div className="tile is-parent" key={active}>
-                                                        <a id={x.name}>
+                                                        <a id={x.name} className={"noGrab"}>
                                                             <div className="tile is-child box is-fullwidth">
                                                                 <p className="title is-4">{x.name}</p>
                                                                 {Object.keys(x).map((item) => {
