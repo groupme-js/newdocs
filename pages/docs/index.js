@@ -6,6 +6,8 @@ export default function Docs({ childData }) {
         <div>
             <Head>
                 <title>Documentation | node-groupme</title>
+                <meta property="og:title" content="Documentation | node-groupme" />
+                <meta name="title" content="Documentation | node-groupme" />
             </Head>
             <div className="container">
                 <h1 className="title py-6">Documentation</h1>

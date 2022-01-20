@@ -26,6 +26,8 @@ export default function Docs({ childData, active }) {
         <div>
             <Head>
                 <title>Documentation | node-groupme</title>
+                <meta property="og:title" content="Documentation | node-groupme" />
+                <meta name="title" content="Documentation | node-groupme" />
             </Head>
             <div className="container">
                 <h1 className="title py-6">Documentation</h1>
@@ -44,9 +46,7 @@ export default function Docs({ childData, active }) {
                                         <a id={active}>
                                             <div className="tile is-child box is-fullwidth">
                                                 <p className="title is-4">{x.name}</p>
-                                                <p className="">
-                                                    Data to implement: {Object.keys(x).join(", ")}
-                                                </p>
+                                                <p className="">Data to implement: {Object.keys(x).join(", ")}</p>
                                                 {x.sources ? <p className="title is-5">Source</p> : null}
                                                 {x?.sources?.map((source) => {
                                                     return (

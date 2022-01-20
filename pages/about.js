@@ -5,6 +5,8 @@ export default function About() {
         <div>
             <Head>
                 <title>About | node-groupme</title>
+                <meta property="og:title" content="About | node-groupme" />
+                <meta name="title" content="About | node-groupme" />
             </Head>
             <div className="container">
                 <h1 className="title">About node-groupme</h1>
