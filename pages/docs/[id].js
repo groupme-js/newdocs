@@ -37,29 +37,47 @@ export default function Docs({ childData, active }) {
                             <DocMenu active={active} />
                         </div>
                     </div>
-                    <div className="tile is-parent">
+                    <div className="tile is-parent contentTile">
                         <div className="tile is-child">
                             <p className="title py-3">{active}</p>
-                            {childData.children.map((x) => {
+                            {["Constructor", "Property", "Method"].map((kind) => {
                                 return (
-                                    <div className="tile is-parent" key={active}>
-                                        <a id={active}>
-                                            <div className="tile is-child box is-fullwidth">
-                                                <p className="title is-4">{x.name}</p>
-                                                <p className="">Data to implement: {Object.keys(x).join(", ")}</p>
-                                                {x.sources ? <p className="title is-5">Source</p> : null}
-                                                {x?.sources?.map((source) => {
-                                                    return (
-                                                        <p key={source.fileName + "#L" + source.line} className="subtitle is-6">
-                                                            <a href={"https://github.com/groupme-js/node-groupme/tree/main/" + source.fileName + "#L" + source.line}>
-                                                                {source.fileName} - Line {source.line}
-                                                            </a>
-                                                        </p>
-                                                    )
-                                                })}
-                                            </div>
-                                        </a>
-                                    </div>
+                                    <>
+                                    <hr />
+                                        <p className="subtitle py-3">{kind}</p>
+
+                                        {childData.children
+                                            .filter((x) => x.kindString == kind)
+                                            .map((x) => {
+                                                return (
+                                                    <div className="tile is-parent" key={active}>
+                                                        <a id={x.name}>
+                                                            <div className="tile is-child box is-fullwidth">
+                                                                <p className="title is-4">{x.name}</p>
+                                                                {Object.keys(x).map((item) => {
+                                                                    return (
+                                                                        <p key={item}>
+                                                                            {item} - {JSON.stringify(x[item])}
+                                                                        </p>
+                                                                    )
+                                                                })}
+                                                                {x.sources ? <p className="title is-5 mt-3">Source</p> : null}
+                                                                {x?.sources?.map((source) => {
+                                                                    return (
+                                                                        <p key={source.fileName + "#L" + source.line} className="subtitle is-6">
+                                                                            <a href={"https://github.com/groupme-js/node-groupme/tree/main/" + source.fileName + "#L" + source.line}>
+                                                                                {source.fileName} - Line {source.line}
+                                                                            </a>
+                                                                        </p>
+                                                                    )
+                                                                })}
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                )
+                                            })}
+                                        
+                                    </>
                                 )
                             })}
                         </div>
