@@ -1,5 +1,6 @@
 import Head from "next/head"
 import DocMenu from "../../components/DocMenu"
+import JumpToTop from "../../components/JumpToTop"
 
 import { getTopLevelChilds, getChildData } from "../../lib/docs"
 
@@ -65,7 +66,7 @@ export default function Docs({ childData, active }) {
                                                                 {x.sources ? <p className="title is-5 mt-3">Source</p> : null}
                                                                 {x?.sources?.map((source) => {
                                                                     return (
-                                                                        <p key={source.fileName + "#L" + source.line} className="subtitle is-6">
+                                                                        <p key={source.fileName + "-line" + source.line} className="subtitle is-6">
                                                                             <a href={"https://github.com/groupme-js/node-groupme/tree/main/" + source.fileName + "#L" + source.line}>
                                                                                 {source.fileName} - Line {source.line}
                                                                             </a>
@@ -84,6 +85,7 @@ export default function Docs({ childData, active }) {
                     </div>
                 </div>
             </div>
+            <JumpToTop />
         </div>
     )
 }
