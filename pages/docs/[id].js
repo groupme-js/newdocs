@@ -56,6 +56,9 @@ export default function Docs({ childData, active }) {
                                                         <a id={x.name} className={"noGrab"}>
                                                             <div className="tile is-child box is-fullwidth">
                                                                 <p className="title is-4">{x.name}</p>
+                                                                {x.flags.isPrivate ? <span class="tag is-danger">Private</span> : null}
+                                                                {x.flags.isReadOnly ? <span class="tag is-danger">Read-only</span> : null}
+                                                                {x.flags.isReadOnly ? <span class="tag is-danger">Abstract</span> : null}
                                                                 {Object.keys(x).map((item) => {
                                                                     return (
                                                                         <p key={item}>
